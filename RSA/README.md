@@ -1,7 +1,7 @@
 # RSA
 Small exercise to understand the RSA algorithm. 
 
-[!CAUTION]
+**WARNING**
 DON´T USE THIS IN PRODUCTION!
 
 Can only encript and decrypt integer values.
@@ -23,5 +23,6 @@ Takes a integer value and the private key.
 ```
 dec_msg(crypt, k_pub)
 ```
+
 
 Takes the encrypted value and the public key.
