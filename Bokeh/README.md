@@ -16,4 +16,6 @@ Example Server File from the bokeh documentation. Requires a bokeh server. Execu
 bokeh serve --show server_plot.py
 ```
 
+## 03_csv_plot.py
 
+CSV-Data visualization based on climate data. Outputs two graphs with hover-tooltips.
