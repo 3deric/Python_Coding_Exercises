@@ -1,4 +1,4 @@
-from PIL import Image, ImageFilter, ImageDraw, ImageFont
+from PIL import Image, ImageFilter, ImageDraw
 import os
 import sys
 
@@ -47,7 +47,6 @@ def resize_blur(file, export_dir):
     new_filename = os.path.basename(file).split('.')[0] + '_converted.jpg'
     out_img.save(export_dir + new_filename)
   
-  
 #get all images of type jpg and apply filters
 def convert_images(dir):
     export_dir = dir + 'converted/'
@@ -58,6 +57,7 @@ def convert_images(dir):
         if file.endswith('.jpg') or file.endswith('.jpeg'):
             resize_blur(dir + file, export_dir)
 
-dir = sys.argv[1]
-convert_images(dir)
+if __name__ == '__main__':
+    dir = sys.argv[1]
+    convert_images(dir)
 
